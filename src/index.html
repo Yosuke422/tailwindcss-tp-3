@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+
+<body class="bg-slate-300">
+  <div class="dark:bg-slate-900 dark:text-white pb-8 text-sm w-full">
+    <div class="w-full flex justify-center py-8">
+      <button id="theme-toggle" class="p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white">
+        Toggle theme
+      </button>
+    </div>
+    <!-- Ecrivez le contenu à partir d'ici et supprimez le bloc suivant avant de commencer -->
+    <div class="bg-secondcard dark:bg-slate-700 dark:text-white w-96 rounded-lg mx-auto my-8 p-5 shadow-xl">
+        <div class="flex justify-between border-gray-600">
+          <div class="flex p-2 space-x-3">
+            <iconify-icon icon="ion:calendar-outline" width="20" height="20"></iconify-icon>
+            <h1 class=" font-bold ">My Schedule</h1>
+          </div>
+          <div>
+            <iconify-icon icon="tabler:arrow-right" width="30" height="30" style="color: #a70f4e"></iconify-icon>
+          </div>
+        </div>
+      <div class="  dark:bg-slate-700 dark:text-white border-gray-300 rounded border-2 mx-auto my-5 p-5 shadow-lg">
+        <div class=" flex justify-between">
+          <div>
+            <h1 class="">Tues, Jan 17 2023</h1>
+            <h1 class="font-bold">Shift name</h1>
+          </div>
+          <p class="  dark:bg-primary dark:text-white bg-secondary h-fit rounded-2xl px-3 py-1">In 45minutes</p>
+        </div>
+
+        <div class="  dark:bg-slate-700 dark:text-white border-gray-300 rounded border-2 mx-auto my-5 p-5  bg-secondcard">
+          <!-- add ul with 6 hours -->
+          <div class="flex flex-col">
+            <div class="flex justify-between pb-3">
+              <h1 class=" font-bold">07:00A - 03:00P</h1>
+              <iconify-icon icon="solar:alt-arrow-up-outline" width="20" height="20" style="color: #a70f4e;" ></iconify-icon>
+
+            </div>
+            <div class="flex justify-between pb-3">
+              <h1>07:00 - 10:00</h1>
+
+            </div>
+            <div class="flex justify-between pb-3">
+              <h1>07:00 - 10:00</h1>
+
+            </div>
+            <div class="flex justify-between pb-3">
+              <h1>07:00 - 10:00</h1>
+            </div>
+            <div class="flex justify-between pb-3">
+              <h1>07:00 - 10:00</h1>
+            </div>
+            <div class="flex justify-between pb-3">
+              <p class="font-extralight">Shift disclaimer lorem ipsum dolor</p>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="bg-slate-100 dark:bg-slate-700 dark:text-white w-96 rounded-lg mx-auto my-8 p-5 shadow-xl">
+      <div class="flex justify-between border-gray-600">
+        <div class="flex p-2 space-x-3">
+          <iconify-icon icon="ion:calendar-outline" width="20" height="20"></iconify-icon>
+          <h1 class=" font-bold ">My Schedule</h1>
+        </div>
+        <div>
+          <iconify-icon icon="tabler:arrow-right" width="30" height="30" style="color: #a70f4e"></iconify-icon>
+        </div>
+      </div>
+    <div class="  dark:bg-slate-700 dark:text-white border-gray-300 rounded border-2 mx-auto my-5 p-5 shadow-lg">
+      <div class=" flex justify-between">
+        <div>
+          <h1 class="">Tues, Jan 17 2023</h1>
+          <h1 class="font-bold">Shift name</h1>
+        </div>
+        <p class="  dark:bg-primary dark:text-white bg-secondary h-fit rounded-2xl px-3 py-1">In 45minutes</p>
+      </div>
+
+      <div class="  dark:bg-slate-700 dark:text-white border-gray-300 rounded border-2 mx-auto my-5 p-5  bg-secondcard">
+        <!-- add ul with 6 hours -->
+        <div class="flex flex-col">
+          <div class="flex justify-between pb-3">
+            <h1 class=" font-bold">07:00A - 03:00P</h1>
+            <iconify-icon icon="ri:arrow-down-s-line" width="20" height="20" style="color: #a70f4e;"></iconify-icon>
+          </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="bg-slate-100 dark:bg-slate-700 dark:text-white w-96 rounded-lg mx-auto my-8 p-5 shadow-xl">
+    <div class="flex justify-between border-gray-600">
+      <div class="flex p-2 space-x-3">
+        <iconify-icon icon="ion:calendar-outline" width="20" height="20"></iconify-icon>
+        <h1 class=" font-bold ">My Schedule</h1>
+      </div>
+      <div>
+        <iconify-icon icon="tabler:arrow-right" width="30" height="30" style="color: #a70f4e"></iconify-icon>
+      </div>
+    </div>
+    <div class="  dark:bg-slate-700 dark:text-white border-gray-300 rounded border-2 mx-auto my-5 p-5 shadow-lg">
+      <div class=" flex justify-between">
+        <div>
+          <h1 class="">Empty state message lorem ipsum</h1>
+        </div>
+
+    </div>
+    <script>
+      const btn = document.getElementById("theme-toggle");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+</body>
+
+</html>
